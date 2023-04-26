@@ -1,0 +1,32 @@
+[user]
+	name = user.name
+	email = user.email
+
+[alias]
+	ci = commit
+    co = checkout
+	st = status
+	sh = stash
+	br = branch
+	su = submodule update --init
+	la = log --graph --oneline --decorate --all
+    cp = cherry-pick
+    rp = rebase --reapply-cherry-picks
+    rs = rebase --skip
+	rc = rebase --continue
+	ra = rebase --abort
+
+[core]
+    editor = vim
+
+[push]
+	autoSetupRemote = true
+
+[color]
+	ui = true
+
+[https]
+	proxy = https://127.0.0.1:7890
+
+[http]
+	proxy = http://127.0.0.1:7890

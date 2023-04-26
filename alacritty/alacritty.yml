@@ -1,0 +1,81 @@
+colors:
+  primary:
+    background: '0x1e2030'
+    foreground: '0x7f85a3'
+
+  cursor:
+    text:   '0x7f85a3'
+    cursor: '0x808080'
+
+  normal:
+    black:   '0x444a73'
+    red:     '0xff5370'
+    green:   '0x4fd6be'
+    yellow:  '0xffc777'
+    blue:    '0x3e68d7'
+    magenta: '0xfc7b7b'
+    cyan:    '0x86e1fc'
+    white:   '0xd0d0d0'
+
+  bright:
+    black:   '0x828bb8'
+    red:     '0xff98a4'
+    green:   '0xc3e88d'
+    yellow:  '0xffc777'
+    blue:    '0x82aaff'
+    magenta: '0xff966c'
+    cyan:    '0xb4f9f8'
+    white:   '0x5f8787'
+
+font:
+  normal:
+    family: Source Code Pro
+    style: Regular
+
+  bold:
+    family: Source Code Pro
+    style: Bold
+
+  italic:
+    family: Source Code Pro
+    style: Italic
+
+  bold_italic:
+    family: Source Code Pro
+    style: Bold Italic
+
+  size: 12
+
+key_bindings:
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
+
+offset:
+  x: 0
+  y: 0
+
+glyph_offset:
+  x: 0
+  y: 0
+
+window:
+  opacity: 0.85
+
+  padding:
+    x: 10
+    y: 10
+
+  decorations: full
+  startup_mode: Windowed
+  dynamic_title: true
+
+cursor:
+  style:
+    shape: Block
+    blinking: On
+
+  unfocused_hollow: false
+
+live_config_reload: true
+
+env:
+  WINIT_X11_SCALE_FACTOR: "1.2"

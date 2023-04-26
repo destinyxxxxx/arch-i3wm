@@ -1,0 +1,13 @@
+[Unit]
+Description=Remote desktop service (VNC)
+Requires=display-manager.service
+After=display-manager.service
+ 
+[Service]
+pype=simple
+ExecStart=/usr/bin/x11vnc -display :0 -auth /home/destiny/.Xauthority -forever -loop -noxdamage -repeat -rfbauth /home/destiny/.vnc/passwd -rfbport 5900 -shared -capslock -nomodtweak -ncache 10
+ExecStop=/usr/bin/killall x11vnc
+ 
+[Install]
+WantedBy=multi-user.target
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=Clash service
+After=network.target
+
+[Service]
+Type=simple
+User=destiny
+ExecStart=/opt/apps/clash/clash-linux-amd64-v3 -f /opt/apps/clash/glados.yaml -d /opt/apps/clash/
+Restart=on-failure
+RestartPreventExitStatus=23
+
+[Install]
+WantedBy=multi-user.target
